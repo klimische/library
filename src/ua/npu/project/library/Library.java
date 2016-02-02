@@ -8,6 +8,7 @@ public class Library {
     //Властивості обʼєкта "Бібліотека"
     public ArrayList<ReadingRoom> rooms;
     public ArrayList<Publication> publications;
+    public ArrayList<Re> publications;
     public CardIndex cardIndex;
 
     /*Конструктор бібліотеки, що приймає три параметри:
