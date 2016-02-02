@@ -16,9 +16,10 @@ public class Library {
      2)список видань
      3)картотека (одна, не список! в бібліотеці ж одна картотека?
       */
-    public Library(ArrayList<ReadingRoom> rooms, ArrayList<Publication> publications, CardIndex cardIndex) {
+    public Library(ArrayList<ReadingRoom> rooms, ArrayList<Publication> publications, CardIndex cardIndex, ArrayList<Reader> Readers) {
         this.rooms = rooms;
         this.publications = publications;
+        this.Readers = Readers;
         this.cardIndex = cardIndex;
     }
 
@@ -29,6 +30,7 @@ public class Library {
     public Library() {
         this.rooms = new ArrayList<ReadingRoom>();
         this.publications = new ArrayList<Publication>();
+        this.Readers = new ArrayList<Readers>();
         this.cardIndex = new CardIndex();
     }
     public void AddPublication(Publication publication){
